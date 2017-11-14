@@ -1,0 +1,10 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "rules": {
+        "no-unused-vars": 0,
+        "newline-after-var": 0
+    }
+}

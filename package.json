@@ -1,0 +1,26 @@
+{
+    "name": "e2e",
+    "version": "0.0.1",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "mocha:e2e": "mocha \"e2e/test/**/*.js\" --reporter mochawesome --reporter-options reportDir=_e2e_tests_results,reportFilename=index",
+        "lint:e2e": "eslint e2e/",
+        "start": "npm-run-all --parallel mocha:e2e lint:e2e"
+    },
+    "repository": {},
+    "keywords": [],
+    "dependencies": {},
+    "devDependencies": {
+        "babel-eslint": "^8.0.2",
+        "chai": "4.1.2",
+        "chromedriver": "2.33.2",
+        "eslint": "4.10.0",
+        "lodash": "4.17.4",
+        "mocha": "4.0.1",
+        "mochawesome": "2.3.1",
+        "npm-run-all": "4.1.2",
+        "selenium-webdriver": "3.6.0",
+        "yargs": "10.0.3"
+    }
+}
